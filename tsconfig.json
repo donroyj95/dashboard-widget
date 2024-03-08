@@ -1,0 +1,23 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": "src",
+    "target": "es6",
+    "module": "esnext",
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin"
+      }
+    ],
+    "moduleResolution":"node",
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.js",
+    ".eslintrc.js",
+    ".eslintrc.production.js"
+  ],
+  "exclude": ["node_modules", "build", "dist"],
+}
