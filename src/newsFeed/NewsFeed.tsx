@@ -15,7 +15,7 @@ const NewsFeed: React.FC = () => {
   useEffect(() => {
     // Fetch news data based on the selected category
     fetchNewsData(category).then((response) => {
-      if (response.data.articles) {
+      if (response.data&&response.data.articles) {
         // Update the state with the fetched news articles
         setNews(response.data.articles);
       }
